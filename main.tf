@@ -2,7 +2,7 @@
 provider "aws" {
   region = "us-east-1"
 }
-# github secret里面还剩2个，AMI_ID
+
 # Fetch existing VPC
 data "aws_vpc" "main_vpc" {
   id = var.vpc_id

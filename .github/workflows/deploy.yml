@@ -203,7 +203,7 @@ jobs:
           aws ssm send-command \
             --document-name "AWS-RunShellScript" \
             --targets '[{"Key":"instanceIds","Values":["${{ env.EC2_INSTANCE_ID }}"]}]' \
-            --parameters '{"commands":["curl -I https://deepseek.fozdigitalz.com"]}' \
+            --parameters '{"commands":["curl -I https://wjy97.top"]}' \
             --region ${{ secrets.AWS_DEFAULT_REGION }}
 
   destroy:

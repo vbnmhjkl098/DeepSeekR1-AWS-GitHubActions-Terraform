@@ -2,7 +2,7 @@
 provider "aws" {
   region = "us-east-1"
 }
-
+# github secret里面还剩2个，AMI_ID
 # Fetch existing VPC
 data "aws_vpc" "main_vpc" {
   id = var.vpc_id
@@ -221,7 +221,7 @@ resource "aws_vpc_endpoint" "ssm_messages" {
 # Route 53 DNS Record
 resource "aws_route53_record" "deepseek_dns" {
   zone_id = var.hosted_zone_id
-  name    = "deepseek.fozdigitalz.com"
+  name    = "wjy97.top"
   type    = "A"
 
   alias {
